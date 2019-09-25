@@ -1,0 +1,74 @@
+$backgroundColor: #000;
+$background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+$bodyColor: #FFF;
+$bodyFont: 'Montserrat', sans-serif;
+$introFont: 'Montserrat Subrayada', sans-serif;
+$fontWeight: 800;
+$desktop: 600px;
+$neonRed: #FF1177;
+$neonBlue: #228DFF;
+$textOutline: -1px 1px $bodyColor, 1px 1px $bodyColor, 1px 1px $bodyColor; 
+$shadowBlue: 0 0 5px $bodyColor, 0 0 10px $bodyColor, 0 0 15px $bodyColor, 0 0 20px $neonBlue, 0 0 35px $neonBlue, 0 0 40px $neonBlue, 0 0 50px $neonBlue, 0 0 75px $neonBlue;
+$shadowRed: 0 0 5px $bodyColor, 0 0 10px $bodyColor, 0 0 15px $bodyColor, 0 0 20px $neonRed, 0 0 35px $neonRed, 0 0 40px $neonRed, 0 0 50px $neonRed, 0 0 75px $neonRed;
+$shadowBlack: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #000, 0 0 35px #000, 0 0 40px #000, 0 0 50px #000, 0 0 75px #000;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  color: $bodyColor;
+  font-family: $bodyFont;
+  margin: 0;
+  background: $background;
+  background-attachment: fixed;
+  padding: 0 60px 0;
+  
+}
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: $background;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $bodyColor;
+}
+.enhanced-3d-mode {
+  text-shadow: -4px 4px green, 4px 0px red, -4px 0px green, 4px -4px red;
+}
+
+@media only screen and (max-width: $desktop) {
+  body {
+    padding: 60px 10px 60px 0;
+  }
+}
+@media only screen and (min-width: $desktop) {
+  .section-h2 {
+    position: relative;
+    font-size: 1em;
+    text-shadow: $shadowBlue;
+  }
+  .section-h2::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    box-shadow: $shadowBlue;
+  }
+}
+
+@import "navigation";
+@import "logo";
+@import "about";
+@import "work";
+@import "contact";
+@import "scrollDown";
+@import "puzzle";
+@import "animation2";
+@import "crt";

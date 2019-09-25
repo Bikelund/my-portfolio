@@ -1,0 +1,78 @@
+@media only screen and (max-width: $desktop) {
+    .contact {
+        display: flex;
+    }
+    .contact h3 {
+        display: none;
+    }
+    .contact .right {
+        display: flex;
+        flex-direction: column;
+        padding: 200px 0 40px;
+        width: 84%;
+    }
+    .contact .left {
+        height: calc(75vh - 60px);
+    }
+    .contact .right .outline {
+        font-size: 3em;
+        font-weight: 800;
+        width: 0;
+    }
+    .Menu-list {
+        list-style-type: none;
+        padding: 0;
+    }
+    .Menu-list a {
+        font-size: 3em;
+        font-weight: 900;
+        text-decoration: none;
+        color: black;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    }
+    .Menu-list a::after {
+        content: "\21E6";
+        position: absolute;
+        color: white;
+        text-shadow: $shadowBlue;
+        right: 10%;
+    }
+}
+
+@media only screen and (min-width: $desktop) {
+    .contact {
+        width: 70vw;
+        display: flex;
+        margin: 25vh auto 0;
+        height: auto;
+    }
+    .contact .right {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+    .contact .left {
+        height: calc(75vh - 60px);
+    }
+    .contact .right .outline {
+        font-size: 6vh;
+        font-weight: 800;
+        width: 0;
+    }
+    .Menu-list {
+        list-style-type: none;
+        margin-bottom: 10vh;
+        text-align: center;
+    }
+    .Menu-list li {
+        display: inline-block;
+    }
+    .Menu-list li:nth-child(2)::before,
+    .Menu-list li:nth-child(2)::after {
+        content: "|";
+        font-size: 6vh;
+        color: black;
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+
+    }
+}

@@ -1,0 +1,236 @@
+@media only screen and (max-width: 600px) {
+    .work {
+        display: flex;
+        margin-top: 30vh;
+    }
+    .work .right {
+        display: flex;
+        flex-direction: column;
+    }
+    .work-white-stripes {
+        width: 80vw;
+        height: 40vh;
+        background: url(/assets/images/work-white-stripes.jpg);
+        background-size: cover;
+    }
+    .work-x45-001 {
+        width: 80vw;
+        height: 40vh;
+        background: url(/assets/images/work-x45-001.jpg);
+        background-size: cover;
+    }
+    .work-grid > p {
+        font-size: 6vh;
+    }
+    .ml10,
+    .ml11,
+    .ml12 {
+        margin: 0;
+        padding: 0;
+        text-shadow: $textOutline;
+    }
+    .work-the,
+    .work-white,
+    .work-stripes,
+    .work-x45,
+    .work-krang,
+    .work-colossus,
+    .work-crt {
+        line-height: .6em;
+    }
+    .work-white-stripes-demo,
+    .work-x45-001-demo {
+        margin: 2vh 0 10vh;
+        font-size: 2em;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .work {
+        width: 70vw;
+        display: flex;
+        margin: 30vh auto 10vh;
+        height: auto;
+        font-weight: 900;
+    }
+    .work-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-template-rows: repeat(25, 18vh);
+        padding-top: 2vh;
+    }
+    .work-white-stripes {
+        background: url(/assets/images/work-white-stripes.jpg);
+        background-size: cover;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 4;
+        grid-row-end: 7;
+        filter: grayscale(80%);
+        margin: 0;
+        border: 2px solid #222222;
+    }
+    .work-white-stripes-seven {
+        background: url(/assets/images/seven-nation-army.jpg);
+        background-size: cover;
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: 6;
+        grid-row-end: 8;
+        filter: grayscale(80%);
+        z-index: 20;
+        margin: 0;
+        border: 2px solid #222222;
+    }
+    .work-grid > p {
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 10vh;
+        font-weight: 900;
+        line-height: .2em;
+        text-shadow: $textOutline;
+    }
+    .work-the {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .work-white {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .work-stripes {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .work-white-stripes-text {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 6;
+    }
+    .work-white-stripes-demo {
+        grid-column-start: 6;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        font-size: 4em;
+        transform: rotate(90deg);
+        transform-origin: 0 0;
+    }
+    .work-white-stripes-demo a {
+        display: block;
+        margin: 8vh 0 0 2vw;
+    }
+
+    /* X45-001 */
+    .work-x45-001 {
+        background: url(/assets/images/work-x45-001.jpg);
+        background-size: cover;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 14;
+        grid-row-end: 17;
+        filter: grayscale(80%);
+        margin: 0;
+        border: 2px solid #222222;
+    }
+    .work-x45-001-asteroids {
+        background: url(/assets/images/asteroids.jpg);
+        background-size: cover;
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: 16;
+        grid-row-end: 18;
+        filter: grayscale(80%);
+        z-index: 20;
+        margin: 0;
+        border: 2px solid #222222;
+    }
+    .work-x45 {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 11;
+        grid-row-end: 12;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .work-krang {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 12;
+        grid-row-end: 13;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .work-colossus {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 13;
+        grid-row-end: 15;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    .work-x45-001-demo {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 17;
+        grid-row-end: 18;
+        font-size: 4em;
+        margin-top: 30px;
+    }
+    .work-white-stripes:hover,
+    .work-x45-001:hover,
+    .work-x45-001-asteroids:hover,
+    .work-white-stripes-seven:hover {
+        filter: none;
+        z-index: 10;
+        border-color: $bodyColor;
+        box-shadow: $shadowBlue;
+    } 
+}
+
+@media only screen and (min-width: 1200px) {
+    .work-grid > p {
+        font-size: 14vh;
+    }
+}
+/* Moving Letters */
+.ml10,
+.ml11,
+.ml12 {
+    position: relative;
+}
+.ml10 .text-wrapper,
+.ml11 .text-wrapper,
+.ml12 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.ml10 .letter,
+.ml11 .letter,
+.ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+    transform: translateX(-160px)
+}
+.letter-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.work-img {
+    opacity: 0;
+    transition: 500ms ease-out;
+    transition-property: border, box-shadow, filter, opacity;
+}
+.work-demo {
+    opacity: 0;
+    transition: opacity 500ms ease-out 1500ms;
+} 

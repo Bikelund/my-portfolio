@@ -1,0 +1,77 @@
+/*
+	Ball Animation
+*/
+
+.animation-ball-container {
+	display: flex;
+	align-content: space-between;
+}
+.ball-container {
+	width: 20vw;
+	height: 40vh;
+    margin: 0 auto;
+}
+.ball-container .ball {
+	width: 20px;
+	height: 20px;
+	margin: 10px auto;
+    border-radius: 50px;
+	background-color: $bodyColor;
+	opacity: 0;
+	transition: opacity 500ms 500ms;
+	
+}
+.ball:nth-child(1) {
+	animation: swing 1s infinite ease-in-out;
+}
+
+.ball:nth-child(2) {
+    animation: swing 1.01s infinite ease-in-out;
+}
+
+.ball:nth-child(3) {
+	animation: swing 1.02s infinite ease-in-out;
+}
+
+.ball:nth-child(4) {
+	animation: swing 1.03s infinite ease-in-out;
+}
+
+.ball:nth-child(5) {
+	animation: swing 1.04s infinite ease-in-out;
+}
+
+.ball:nth-child(6) {
+	animation: swing 1.05s infinite ease-in-out;
+}
+
+.ball:nth-child(7) {
+	animation: swing 1.06s infinite ease-in-out;
+}
+
+.ball:nth-child(8) {
+	animation: swing 1.07s infinite ease-in-out;
+}
+
+.ball:nth-child(9) {
+	animation: swing 1.08s infinite ease-in-out;
+}
+
+.ball:nth-child(10) {
+	animation: swing 1.09s infinite ease-in-out;
+}
+
+@keyframes swing {
+	0% {
+		background: $bodyColor;
+		transform: translateX(-15px);
+		box-shadow: $shadowBlue;
+	}
+	50% {
+		transform: translateX(15px);
+	}
+	100% {
+		transform: translateX(-15px);
+		background: black;
+	}
+}

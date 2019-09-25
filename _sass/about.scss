@@ -1,0 +1,99 @@
+@media only screen and (max-width: $desktop) {
+    .about {
+        display: flex;
+        margin: 10vh auto 40vh;
+        font-weight: 800;
+        text-align: right; 
+    }
+    .left {
+        position: sticky;
+        width: 16%;
+        height: calc(30vh - 60px);
+        top: calc(25vh + 60px);
+    }
+    .about .right {
+        width: 84%;
+        padding-top: 36%;
+        font-size: 2.4em;
+    }
+    .section-h2 {
+        font-size: 1.2em;
+        position: absolute;
+        margin: 0;
+        top: 40%;
+        left: 45px;
+        transform: rotateZ(-90deg);
+        transform-origin: 0% 100%;
+        text-shadow: $shadowBlue;
+    }
+    .hello {
+        transition: all .8s;
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(140px);
+    }
+    .about-text-show {
+        opacity: 1;
+        transform: translateY(23px);
+    }
+    .outline {
+        font-size: 1.2em;
+        outline: none;
+        color: $bodyColor;
+        text-shadow: $shadowBlue;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: $desktop) {
+    .about {
+        width: 70vw;
+        display: flex;
+        margin: 30vh auto 20vh;
+        height: auto;
+    }
+    .left {
+        position: sticky;
+        width: 20%;
+        height: calc(30vh - 60px);
+        top: calc(25vh + 60px);
+    }
+    .right {
+        width: 80%;
+    }
+    .about-text {
+        font-size: 12vh;
+        margin: 0;
+        font-weight: 800;
+        line-height: 1.2em;
+        letter-spacing: -4px;
+        text-shadow: $textOutline;
+        padding-bottom: 2vh;
+    }
+    .about-text:nth-child(2) {
+        padding-bottom: 20vh;
+    }
+    .hello {
+        transition: all .8s;
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(140px);
+    }
+    .about-text-show {
+        opacity: 1;
+        transform: translateY(23px);
+    }
+    .outline {
+        color: $backgroundColor;
+        text-shadow: -1px -1px 0 $bodyColor, 1px -1px 0 $bodyColor, -1px 1px 0 $bodyColor, 1px 1px 0 $bodyColor;
+        transition: all .5s;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .outline:hover {
+        outline: none;
+        color: $bodyColor;
+        text-shadow: $shadowBlue;
+    }   
+}

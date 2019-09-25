@@ -1,0 +1,71 @@
+@media only screen and (max-width: $desktop) {
+    .scroll-down,
+    .scroll-up {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: $desktop) {
+    .scroll-down {
+        cursor: default;
+        transform: rotateZ(-90deg);
+        transform-origin: 100% 0%;
+        position: fixed;
+        font-size: .7em;
+        bottom: 16%;
+        left: 5%;
+        transition: all .5s;
+        text-shadow: $shadowBlue;
+    }
+    .scroll-down::before {
+        content: "";
+        background-color: $bodyColor;
+        width: 100px;
+        height: 2px;
+        position: absolute;
+        bottom: 40%;
+        left: -110%;
+        box-shadow: $shadowBlue;
+    }
+    .scroll-down-hidden {
+        text-shadow: none;
+        color: black;
+    }
+    .scroll-down-hidden::before {
+        box-shadow: none;
+        background-color: black;
+        color: black;
+    }
+    .scroll-up {
+        cursor: default;
+        transform: rotateZ(90deg);
+        transform-origin: 100% 0%;
+        position: fixed;
+        font-size: .7em;
+        top: 16%;
+        right: 8%;
+        transition: all .5s;
+        text-shadow: $shadowBlue;
+    }
+    .scroll-up::before {
+        content: "";
+        background-color: $bodyColor;
+        width: 100px;
+        height: 2px;
+        position: absolute;
+        bottom: 38%;
+        left: -140%;
+        box-shadow: $shadowBlue;
+    }
+
+    .scroll-up-hidden {
+        text-shadow: none;
+        color: black;
+    }
+    
+    .scroll-up-hidden::before {
+        box-shadow: none;
+        background-color: black;
+        color: black;
+    }
+}

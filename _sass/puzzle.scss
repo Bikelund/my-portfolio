@@ -1,0 +1,100 @@
+/* Selfie Puzzle */
+
+.selfie-puzzle {
+    display: grid;
+    width: 50vw;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(10, 16vh);
+}
+.selfie-puzzle > div {
+    background: url(/assets/images/nicklas2.jpg);
+    position: sticky;
+    top: calc(25vh + 60px);
+    background-size: cover;
+}
+.selfie-puzzle div:first-child {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    background-position-x: -200%; 
+}
+.selfie-puzzle div:nth-child(2) {
+    background-position-x: -300%; 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+.selfie-puzzle div:nth-child(3) {
+    background-position-x: -400%; 
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+.selfie-puzzle div:nth-child(4) {
+    background-position-x: -500%; 
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+.selfie-puzzle div:nth-child(5) {
+    background-position-x: -600%; 
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+@media only screen and (max-width: $desktop) {
+    .selfie-puzzle {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: $desktop) {
+    .selfie-puzzle {
+        margin: 0 auto;
+    }
+    .selfie-puzzle > div {
+        background: url(/assets/images/nicklas2.jpg);
+    }
+    .selfie-puzzle div:first-child {
+        background-position-x: 0%; 
+    }
+    .selfie-puzzle div:nth-child(2) {
+        background-position-x: -100%; 
+    }
+    .selfie-puzzle div:nth-child(3) {
+        background-position-x: -200%; 
+    }
+    .selfie-puzzle div:nth-child(4) {
+        background-position-x: -300%; 
+    }
+    .selfie-puzzle div:nth-child(5) {
+        background-position-x: -400%; 
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .selfie-puzzle > div {
+        background: url(/assets/images/CMWC2018.jpg);
+    }
+    .selfie-puzzle div:first-child {
+        background-position-x: -100%;
+    }
+    .selfie-puzzle div:nth-child(2) {
+        background-position-x: -200%; 
+    }
+    .selfie-puzzle div:nth-child(3) {
+        background-position-x: -300%; 
+    }
+    .selfie-puzzle div:nth-child(4) {
+        background-position-x: -400%; 
+    }
+    .selfie-puzzle div:nth-child(5) {
+        background-position-x: -500%; 
+    }
+}
