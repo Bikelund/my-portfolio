@@ -10,13 +10,13 @@ title: "Barklund Portfolio"
 {% include_relative logo.md %}
 
 <!-- Scroll Down -->
-{% include_relative scrollDown.md %}
+{% include_relative scrollIndicator.md %}
 
 <!-- About -->
 {% include_relative about.md %}
 
 <!-- Swing animation -->
-{% include_relative animation2.md %}
+{% include_relative pendulum.md %}
 
 <!-- Work -->
 {% include_relative work.md %}
@@ -25,7 +25,7 @@ title: "Barklund Portfolio"
 {% include_relative contact.md %}
 
 <script src="assets/javascript/smoothScroll.js"></script>
-<script src="assets/javascript/scrollDown.js"></script>
+<script src="assets/javascript/scrollIndicator.js"></script>
+<script src="assets/javascript/fadeInAnimations.js"></script>
 <script src="assets/javascript/parallax.js"></script>
-<script src="assets/javascript/textAnimation.js"></script>
 <script src="assets/javascript/crt.js"></script>

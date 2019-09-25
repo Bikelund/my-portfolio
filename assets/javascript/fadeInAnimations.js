@@ -72,6 +72,7 @@ function checkForVisibility() {
         }
     });
 
+    /* Work images */
     workImages.forEach(function(image) { 
         if (isElementInFullViewport(image)) {
           image.style.opacity = '1';
@@ -84,12 +85,14 @@ function checkForVisibility() {
         }
     });
 
+    /* Pendulum Animation */
     balls.forEach(function(ball) { 
         if (isElementInFullViewport(ball)) {
           ball.style.opacity = '1';
         }
     });
 
+    /* CRT button */
     buttons.forEach(function(button) { 
         if (isElementInFullViewport(button)) {
           button.style.opacity = '1';
