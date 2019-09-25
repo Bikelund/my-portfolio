@@ -13,6 +13,6 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.documentElement.scrollTop > 50) { scrollDown[0].classList.add("scroll-down-hidden");} 
   if (document.documentElement.scrollTop < 50) { scrollDown[0].classList.remove("scroll-down-hidden");} 
-  if (document.documentElement.scrollTop < bodyHeight - viewportHeight - 100) { scrollUp[0].classList.add("scroll-up-hidden");} 
+  if (document.documentElement.scrollTop < bodyHeight - viewportHeight/*  - 100 */) { scrollUp[0].classList.add("scroll-up-hidden");} 
   else { scrollUp[0].classList.remove("scroll-up-hidden");}
 };
