@@ -24,6 +24,10 @@ body {
   padding: 0 60px 0;
   
 }
+/* p {
+  text-shadow: -4px 4px green, 4px 0px red, -4px 0px green, 4px -4px red !important;
+} */
+
 /* Scrollbar */
 /* width */
 ::-webkit-scrollbar {
@@ -72,3 +76,4 @@ body {
 @import "puzzle";
 @import "pendulum";
 @import "crt";
+@import "easteregg";

@@ -6,6 +6,9 @@ title: "Barklund Portfolio"
 <!-- Navigation bar -->
 <!-- {% include_relative navigation.md %} -->
 
+<!-- Easter egg -->
+{% include_relative easteregg.md %}
+
 <!-- Logo -->
 {% include_relative logo.md %}
 
@@ -29,3 +32,4 @@ title: "Barklund Portfolio"
 <script src="assets/javascript/fadeInAnimations.js"></script>
 <script src="assets/javascript/parallax.js"></script>
 <script src="assets/javascript/crt.js"></script>
+<script src="assets/javascript/easteregg.js"></script>

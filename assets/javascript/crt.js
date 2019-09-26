@@ -51,6 +51,7 @@ function crtOnOrOff() {
     onOffBtn.style.color = "black";
     television[0].classList.add('turning-on');
     television[0].style.opacity = '1';
+    easterEggBtn.style.top = "10px";
     setTimeout(function(){
       onOffBtn.innerHTML = "Turn Off";
       onOffBtn.style.zIndex = '0';
@@ -62,6 +63,7 @@ function crtOnOrOff() {
   else { 
     onOffBtn.style.zIndex = '-10';
     onOffBtn.style.color = 'black';
+    easterEggBtn.style.top = "-100px";
     anime({
       targets: '.screen',
       scaleY: {
